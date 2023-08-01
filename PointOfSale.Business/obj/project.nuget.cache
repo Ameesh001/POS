@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KA9GtiAFNiJgL8BGtoAjs6c/wU7LPgRlIfvFJPhdDuV83RO/hWcgRqzzO7WEtfoVEr3HXfe9E0i9s5I4aiNPzA==",
+  "dgSpecHash": "Pm4H9wGd8YFY6SQS5YJE2MIkZ57tntCCFEb2QqADMWFpdk9/ZKO8p3NXp8/xrnN67M9I9W+ESx8uLjSChhm+WQ==",
   "success": true,
-  "projectFilePath": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Business\\PointOfSale.Business.csproj",
+  "projectFilePath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Business\\PointOfSale.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\umais\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\umais\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "prpqtzcaDGvUBpovNv9JFTrj+Z1Y7RXkKL+Hs0fUA94zSK2XpW2DOUQ+u9uxNJuO3J2Fki7nHT2aiIP5A+k6Zg==",
+  "dgSpecHash": "KYrvM0Dxrb74MQJct/TKcXjVYSq6knQKJjT4Zg0QjNNj3q7QMXGZBXsnTbi4Ha9FP1NJaVqG2P1Ypx2mdQQj5g==",
   "success": true,
-  "projectFilePath": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale\\PointOfSale.csproj",
+  "projectFilePath": "D:\\PersonalProject\\2022\\POS\\PointOfSale\\PointOfSale.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\umais\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\umais\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

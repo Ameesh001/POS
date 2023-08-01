@@ -1933,11 +1933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Data\\PointOfSale.Data.csproj",
+      "projectUniqueName": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Data\\PointOfSale.Data.csproj",
       "projectName": "PointOfSale.Data",
-      "projectPath": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Data\\PointOfSale.Data.csproj",
+      "projectPath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Data\\PointOfSale.Data.csproj",
       "packagesPath": "C:\\Users\\umais\\.nuget\\packages\\",
-      "outputPath": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Data\\obj\\",
+      "outputPath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\umais\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1954,8 +1954,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Model\\PointOfSale.Model.csproj": {
-              "projectPath": "D:\\PersonalProject\\2022\\PointofSale\\PointOfSale.Model\\PointOfSale.Model.csproj"
+            "D:\\PersonalProject\\2022\\POS\\PointOfSale.Model\\PointOfSale.Model.csproj": {
+              "projectPath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Model\\PointOfSale.Model.csproj"
             }
           }
         }
