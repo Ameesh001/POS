@@ -71,7 +71,11 @@ namespace PointOfSale.Utilities.Automapper
                 destiny.Price,
                 opt => opt.MapFrom(source => Convert.ToString(source.Price.Value, new CultureInfo("es-PE")))
             )
-            .ForMember(destiny =>
+			.ForMember(destiny =>
+				destiny.WSPrice,
+				opt => opt.MapFrom(source => Convert.ToString(source.WSPrice.Value, new CultureInfo("es-PE")))
+			)
+			.ForMember(destiny =>
                 destiny.PhotoBase64,
                 opt => opt.MapFrom(source => Convert.ToBase64String(source.Photo))
             );
@@ -88,7 +92,11 @@ namespace PointOfSale.Utilities.Automapper
             .ForMember(destiono =>
                 destiono.Price,
                 opt => opt.MapFrom(source => Convert.ToDecimal(source.Price, new CultureInfo("es-PE")))
-            );
+			)
+			.ForMember(destiny =>
+				destiny.WSPrice,
+				opt => opt.MapFrom(source => Convert.ToString(source.WSPrice, new CultureInfo("es-PE")))
+			);
             #endregion
 
             #region TypeDocumentSale

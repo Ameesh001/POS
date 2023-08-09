@@ -12,7 +12,9 @@ namespace PointOfSale.Model
         public int? IdCategory { get; set; }
         public int? Quantity { get; set; }
         public decimal? Price { get; set; }
-        public byte[]? Photo { get; set; }
+		public decimal? WSPrice { get; set; }
+		public int? CrtnSize { get; set; }
+		public byte[]? Photo { get; set; }
         public bool? IsActive { get; set; }
         public DateTime? RegistrationDate { get; set; }
 

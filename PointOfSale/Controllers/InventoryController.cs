@@ -32,6 +32,11 @@ namespace PointOfSale.Controllers
             return View();
         }
 
+        public IActionResult Stock()
+        {
+            return View();
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {

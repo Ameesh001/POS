@@ -238,7 +238,12 @@ namespace PointOfSale.Data.DBContext
                     .IsUnicode(false)
                     .HasColumnName("barCode");
 
-                entity.Property(e => e.Brand)
+				entity.Property(e => e.CrtnSize)
+					.HasMaxLength(50)
+					.IsUnicode(false)
+					.HasColumnName("crtnsize");
+
+				entity.Property(e => e.Brand)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("brand");

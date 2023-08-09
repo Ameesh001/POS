@@ -10,7 +10,9 @@
         public string? NameCategory { get; set; }
         public int? Quantity { get; set; }
         public string? Price { get; set; }
-        public byte[]? Photo { get; set; }
+		public int? CrtnSize { get; set; }
+		public string? WSPrice { get; set; }
+		public byte[]? Photo { get; set; }
         public string? PhotoBase64 { get; set; }
         public int? IsActive { get; set; }
     }

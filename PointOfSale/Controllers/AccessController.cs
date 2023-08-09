@@ -18,7 +18,6 @@ namespace PointOfSale.Controllers
             _userService = userService;
 
         }
-
         public IActionResult Login()
         {
             ClaimsPrincipal claimuser = HttpContext.User;

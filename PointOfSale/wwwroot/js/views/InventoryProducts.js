@@ -9,6 +9,8 @@ const BASIC_MODEL = {
     idCategory: 0,
     quantity: 0,
     price: 0,
+    wsPrice: 0,
+    crtnSize: 0,
     isActive: 1,
     photo: ""
 }
@@ -30,7 +32,29 @@ $(document).ready(function () {
 
             }
         })
+        ///////////////////////////////////////////////////////////////////////////////////
 
+    //$.ajax({
+    //    url: '/Inventory/GetProducts',
+    //    type: 'GET',
+    //    dataType: 'json',
+    //    success: function (data) {
+    //        $('#datatable-table').dataTable({
+    //            "sAjaxDataProp": "",
+    //            "bProcessing": true,
+    //            "aaData": data,
+    //            "aoColumnDefs": [
+    //                { "mData": "id" },
+    //                { "mData": "bandname" },
+    //                { "mData": "members" },
+    //                { "mData": "bio" },
+    //                { "mData": "songlist" }
+    //            ]
+    //        });
+    //    },
+    //    error: function () { console.log('error retrieving customers'); }
+    //});
+        ///////////////////////////////////////////////////////////////////////////////////
 
     tableData = $("#tbData").DataTable({
         responsive: true,
@@ -56,6 +80,8 @@ $(document).ready(function () {
             { "data": "nameCategory" },
             { "data": "quantity" },
             { "data": "price" },
+            { "data": "wsPrice" },            
+            { "data": "crtnSize" },
             {
                 "data": "isActive", render: function (data) {
                     if (data == 1)
@@ -96,6 +122,8 @@ const openModal = (model = BASIC_MODEL) => {
     $("#cboCategory").val(model.idCategory == 0 ? $("#cboCategory option:first").val() : model.idCategory);
     $("#txtQuantity").val(model.quantity);
     $("#txtPrice").val(model.price);
+    $("#txtWSPrice").val(model.wsPrice);
+    $("#txtCrtnSize").val(model.crtnSize);
     $("#cboState").val(model.isActive);
     $("#txtPhoto").val("");
     $("#imgProduct").attr("src", `data:image/png;base64,${model.photoBase64}`);
@@ -127,6 +155,8 @@ $("#btnSave").on("click", function () {
     model["idCategory"] = $("#cboCategory").val();
     model["quantity"] = $("#txtQuantity").val();
     model["price"] = $("#txtPrice").val();
+    model["wsprice"] = $("#txtWSPrice").val();
+    model["crtnsize"] = $("#txtCrtnSize").val();
     model["isActive"] = $("#cboState").val();
     const inputPhoto = document.getElementById('txtPhoto');
 
