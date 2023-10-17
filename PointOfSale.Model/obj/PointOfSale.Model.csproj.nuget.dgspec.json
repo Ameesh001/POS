@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Model\\PointOfSale.Model.csproj",
         "projectName": "PointOfSale.Model",
         "projectPath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Model\\PointOfSale.Model.csproj",
-        "packagesPath": "C:\\Users\\umais\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "D:\\PersonalProject\\2022\\POS\\PointOfSale.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\umais\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

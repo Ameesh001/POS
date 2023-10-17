@@ -12,6 +12,7 @@
         public string? Price { get; set; }
 		public int? CrtnSize { get; set; }
 		public string? WSPrice { get; set; }
+		public string? invoiceRate { get; set; }
 		public byte[]? Photo { get; set; }
         public string? PhotoBase64 { get; set; }
         public int? IsActive { get; set; }

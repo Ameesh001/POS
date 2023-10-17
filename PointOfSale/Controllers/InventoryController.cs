@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PointOfSale.Business.Contracts;
+using PointOfSale.Business.Services;
 using PointOfSale.Model;
 using PointOfSale.Models;
 using PointOfSale.Utilities.Response;
+using System.Data;
 
 namespace PointOfSale.Controllers
 {
@@ -34,7 +36,15 @@ namespace PointOfSale.Controllers
 
         public IActionResult Stock()
         {
+            //var order = GetProducts;
+
+            //Creating dummy datatable for testing
+           
+                            
+
+            ViewBag.datasource = GetCategories();
             return View();
+         
         }
 
         [HttpGet]

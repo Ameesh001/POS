@@ -10,6 +10,7 @@ const BASIC_MODEL = {
     quantity: 0,
     price: 0,
     wsPrice: 0,
+    invoiceRate: 0,
     crtnSize: 0,
     isActive: 1,
     photo: ""
@@ -79,6 +80,7 @@ $(document).ready(function () {
             { "data": "description" },
             { "data": "nameCategory" },
             { "data": "quantity" },
+            { "data": "invoiceRate" },
             { "data": "price" },
             { "data": "wsPrice" },            
             { "data": "crtnSize" },
@@ -95,7 +97,7 @@ $(document).ready(function () {
                     '<button class="btn btn-danger btn-delete btn-sm"><i class="mdi mdi-trash-can"></i></button>',
                 "orderable": false,
                 "searchable": false,
-                "width": "80px"
+                "width": "90px"
             }
         ],
         order: [[0, "desc"]],
@@ -107,7 +109,7 @@ $(document).ready(function () {
                 title: '',
                 filename: 'Report Products',
                 exportOptions: {
-                    columns: [2, 3, 4, 5, 6]
+                    columns: [2, 3, 4, 5, 6,7,8,9,10,11]
                 }
             }, 'pageLength'
         ]
@@ -123,6 +125,7 @@ const openModal = (model = BASIC_MODEL) => {
     $("#txtQuantity").val(model.quantity);
     $("#txtPrice").val(model.price);
     $("#txtWSPrice").val(model.wsPrice);
+    $("#txtinvoiceRate").val(model.invoiceRate);
     $("#txtCrtnSize").val(model.crtnSize);
     $("#cboState").val(model.isActive);
     $("#txtPhoto").val("");
@@ -156,6 +159,7 @@ $("#btnSave").on("click", function () {
     model["quantity"] = $("#txtQuantity").val();
     model["price"] = $("#txtPrice").val();
     model["wsprice"] = $("#txtWSPrice").val();
+    model["invoiceRate"] = $("#txtinvoiceRate").val();
     model["crtnsize"] = $("#txtCrtnSize").val();
     model["isActive"] = $("#cboState").val();
     const inputPhoto = document.getElementById('txtPhoto');
@@ -230,6 +234,19 @@ $("#tbData tbody").on("click", ".btn-edit", function () {
 
 
 $("#tbData tbody").on("click", ".btn-delete", function () {
+
+
+    var ProtectedIsfound = false // default value. 
+    //JavaScript method:
+        //loop through the tr and td, then based on the IsProtected value to change the ProtectedIsFound value.
+        var trlist = document.getElementById("tbData").getElementsByTagName("tr");
+        for (var i = 1; i < trlist.length; i++) {           
+                
+                console.log(trlist[i].getElementsByTagName("td")[2].innerText);             
+            
+        }
+        console.log('123');
+ 
 
     let row;
 

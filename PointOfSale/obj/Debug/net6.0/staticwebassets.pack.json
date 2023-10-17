@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\js\\views\\InventoryProducts.js"
     },
     {
+      "Id": "D:\\PersonalProject\\2022\\POS\\PointOfSale\\wwwroot\\js\\views\\NewStock.js",
+      "PackagePath": "staticwebassets\\js\\views\\NewStock.js"
+    },
+    {
       "Id": "D:\\PersonalProject\\2022\\POS\\PointOfSale\\wwwroot\\js\\views\\ReportsSalesReport.js",
       "PackagePath": "staticwebassets\\js\\views\\ReportsSalesReport.js"
     },

@@ -68,7 +68,8 @@ namespace PointOfSale.Business.Services
                 product_edit.Price = entity.Price;
                 product_edit.WSPrice = entity.WSPrice;
                 product_edit.CrtnSize = entity.CrtnSize;
-                if (entity.Photo != null && entity.Photo.Length > 0)
+				product_edit.invoiceRate = entity.invoiceRate;
+				if (entity.Photo != null && entity.Photo.Length > 0)
                     product_edit.Photo = entity.Photo;
                 product_edit.IsActive = entity.IsActive;
 

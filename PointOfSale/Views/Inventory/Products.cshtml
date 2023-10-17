@@ -42,6 +42,7 @@
 									<th>Description</th>
 									<th>Category</th>
 									<th>Quantity</th>
+									<th>InvoiceRate</th>
 									<th>Price</th>
 									<th>WSPrice</th>
 									<th>CrtnSize</th>
@@ -109,20 +110,29 @@
 									<label for="txtPrice">WS Price</label>
 									<input type="text" class="form-control form-control-sm input-validate" id="txtWSPrice" name="WSPrice">
 								</div>
+								
 							</div>
                             <div class="form-row">
+								<div class="form-group col-sm-6">
+									<label for="txtPrice">Invoice Rate</label>
+									<input type="text" class="form-control form-control-sm input-validate" id="txtinvoiceRate" name="invoiceRate">
+								</div>
+								
 								<div class="form-group col-sm-6">
                                         <label for="txtPrice">Crtn Size</label>
 									<input type="text" class="form-control form-control-sm input-validate" id="txtCrtnSize" name="CrtnSize">
                                     </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="cboState">State</label>
-                                        <select class="form-control form-control-sm" id="cboState">
-                                            <option value="1">Active</option>
-											<option value="0">Inactive</option>
-                                        </select>
-                                    </div>
+                                  
                             </div>
+							<div class="form-row">
+								<div class="form-group col-sm-6">
+									<label for="cboState">State</label>
+									<select class="form-control form-control-sm" id="cboState">
+										<option value="1">Active</option>
+										<option value="0">Inactive</option>
+									</select>
+								</div>
+							</div>
 							<div class="form-row">
 								<div class="form-group col-sm-6">
                                         <label for="txtPhoto">Photo</label>

@@ -13,6 +13,7 @@ namespace PointOfSale.Model
         public int? Quantity { get; set; }
         public decimal? Price { get; set; }
 		public decimal? WSPrice { get; set; }
+		public decimal? invoiceRate { get; set; }
 		public int? CrtnSize { get; set; }
 		public byte[]? Photo { get; set; }
         public bool? IsActive { get; set; }
